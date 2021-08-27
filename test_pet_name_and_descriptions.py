@@ -5,7 +5,7 @@ from setting import email, password
 
 @pytest.fixture(autouse=True)
 def testing():
-   pytest.driver = webdriver.Chrome()
+   pytest.driver = webdriver.Chrome(путь к файлу)
    pytest.driver.implicitly_wait(10)
    # Переходим на страницу авторизации
    pytest.driver.get('http://petfriends1.herokuapp.com/login')
