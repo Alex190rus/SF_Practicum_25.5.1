@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.fixture(autouse=True)
 def testing():
-   pytest.driver = webdriver.Chrome()
+   pytest.driver = webdriver.Chrome(путь к файлу)
    # Переходим на страницу авторизации
    pytest.driver.get('http://petfriends1.herokuapp.com/login')
    element = WebDriverWait(pytest.driver, 10).until(
